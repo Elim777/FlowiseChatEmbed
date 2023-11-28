@@ -50,10 +50,10 @@ export const TextInput = (props: Props) => {
             data-testid='input'
             style={{
                 'border-top': '1px solid #eeeeee',
-                position: 'absolute',
-                left: '20px',
-                right: '20px',
-                bottom: '40px',
+                position: 'fixed', // Zmena na fixné pozicionovanie
+                left: '0', // Umiestnenie na ľavý okraj
+                right: '0', // Umiestnenie na pravý okraj
+                bottom: '0', // Umiestnenie na spodok stránky
                 margin: 'auto',
                 "z-index": 1000,
                 "background-color": props.backgroundColor ?? defaultBackgroundColor,

@@ -50,10 +50,10 @@ export const TextInput = (props: Props) => {
             data-testid='input'
             style={{
                 'border-top': '1px solid #eeeeee',
-                position: 'fixed', // Zmena na fixné pozicionovanie
-                left: '0', // Umiestnenie na ľavý okraj
-                right: '0', // Umiestnenie na pravý okraj
-                bottom: '0', // Umiestnenie na spodok stránky
+                position: 'absolute',
+                left: '20px',
+                right: '20px',
+                bottom: '40px',
                 margin: 'auto',
                 "z-index": 1000,
                 "background-color": props.backgroundColor ?? defaultBackgroundColor,
@@ -62,7 +62,6 @@ export const TextInput = (props: Props) => {
             onKeyDown={submitWhenEnter}
         >
             <ShortTextInput
-                id="my-text-input"
                 ref={inputRef as HTMLInputElement}
                 onInput={handleInput}
                 value={inputValue()}
